@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS Basic Examples</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/date.js"></script>
+	
+	
+</head>
+<body ng-app="mainApp" ng-controller="MainCtrl">
+																																																																									
+<input type="text" ui-date ng-model="startDt">
+<input type="text" ui-date ng-model="endDt">
+
+	
+
+<script type="text/javascript">
+	var app = angular.module("mainApp", ['ui.date']);
+
+	app.controller("MainCtrl", function($scope) {
+		$scope.startDt = $scope.endDt = new Date();
+		//$scope.endDt = $scope.endDt.setDate($scope.startDt.getDate() + 2);
+
+	});
+</script>
+
+</body>
+</html>

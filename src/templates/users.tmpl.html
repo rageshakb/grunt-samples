@@ -1,0 +1,22 @@
+<h2>User List</h2>
+<button class="btn btn-primary pull-right" ng-click="open(user)">Add user</button>
+<table class="table table-bordered" style="margin-top : 70px">
+	<thead>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Nationality</th>
+		<th>Location</th>
+		<th></th>
+		<th></th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="u in users">
+			<td>{{u.firstName}}</td>
+			<td>{{u.lastName}}</td>
+			<td>{{u.nationality}}</td>
+			<td>{{u.location}}</td>
+			<td><a href="#" ng-click="open(u)">Edit</a></td>
+			<td><a href="#" ng-click="deleteUser(u.id)">Delete</a></td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS Basic Examples</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="css/custom.css" rel="stylesheet">
+    <link href="css/toaster.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-route.min.js"></script>
+	<script src="https://code.angularjs.org/1.2.0/angular-animate.min.js" ></script>
+	<script type="text/javascript" src="js/toaster.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/ui-bootstrap-tpls-0.12.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+	
+</head>
+<body ng-app="mainApp">
+	
+<div class="container" ng-controller="mainCtrl">
+	<h2>Users Count is {{count}}</h2>
+	<add-btn-data-list datasource="users" add="updateCount()"></add-btn-data-list>
+</div>
+
+
+	
+
+
+<script type="text/javascript" src="myapp.js"></script>
+</body>
+</html>

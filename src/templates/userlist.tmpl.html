@@ -1,0 +1,20 @@
+<table style="border: 5px solid grey">
+		<thead>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Address</th>
+			<th>Nationality</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="person in persons">
+				<td>{{person.name}}</td>
+				<td>{{person.email}}</td>
+				<td>{{person.address}}</td>
+				<td>{{person.nationality}}</td>
+				<td><a href="#" ng-click="edit(person.id)">Edit</a></td>
+				<td><a href="#" ng-click="delete(person.id)">Delete</a></td>				
+			</tr>
+		</tbody>
+	</table>

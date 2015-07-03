@@ -1,0 +1,21 @@
+{
+  "name": "AngularEg",
+  "version": "1.0.0",
+  "description": "Application dependencies via bower",
+  "authors": [
+    "Ragesh"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.1",
+    "angular-route": "~1.4.1",
+    "bootstrap": "~3.3.5"
+  }
+}
